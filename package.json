@@ -1,0 +1,42 @@
+{
+  "name": "just-texture-packer",
+  "version": "0.0.0",
+  "description": "Pack a folder of images into an optimized texture atlas plus engine manifests (PixiJS first).",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "jtp": "./src/cli/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "jtp": "bun run src/cli/index.ts",
+    "dev": "bun --watch src/cli/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "fmt": "oxfmt src tests",
+    "fmt:check": "oxfmt --check src tests",
+    "bundle": "bun build src/cli/index.ts --target bun --outdir dist"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "oxfmt": "^0.75.0"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5",
+    "zod": "^4.6.7"
+  },
+  "engines": {
+    "bun": ">=1.4.0"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./cli": "./src/cli/index.ts"
+  }
+}
