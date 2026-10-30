@@ -1,6 +1,6 @@
 {
   "name": "just-texture-packer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Pack a folder of images into an optimized texture atlas plus engine manifests (PixiJS first).",
   "module": "src/index.ts",
   "type": "module",
