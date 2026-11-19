@@ -13,7 +13,7 @@ engine manifests next to it (PixiJS 8 first).
 
 ## Requirements
 
-- [Bun](https://bun.sh) ≥ 1.4
+- [Bun](https://bun.sh) ≥ 1.4.5
 - macOS / Linux / Windows (pixel work is done by `sharp`)
 
 ## Install & run
